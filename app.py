@@ -25,7 +25,6 @@ d = st.sidebar.date_input(
     value=datetime.today().date()
 )
 
-
 t = st.sidebar.time_input(
     "Select the time of the ride",
     value=datetime.now().time()
@@ -86,6 +85,9 @@ params= dict(pickup_datetime=date_heure,
 # data = {"positions":[0,6,7,29]}
 r = requests.get(url, params=params)
 to_pay=round(r.json()["fare"],2)
+
+
+
 st.write(r.status_code)
 st.write("it will cost you:",to_pay, "$")
 
