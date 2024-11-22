@@ -74,7 +74,7 @@ st.map(map_data)
 
 import requests
 
-url = 'https://taxifare-729581124946.europe-west1.run.app/predict'
+url = 'https://taxifare.lewagon.ai/predict'
 params= dict(pickup_datetime=date_heure,
                  pickup_longitude=lon,
                  pickup_latitude=lat,
