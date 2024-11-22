@@ -88,7 +88,7 @@ to_pay=round(r.json()["fare"],2)
 
 
 
-st.write(r.status_code)
+# st.write(r.status_code)
 st.write("it will cost you:",to_pay, "$")
 
 '''
